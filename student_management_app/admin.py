@@ -8,7 +8,6 @@ class UserModel(UserAdmin):
 
 
 admin.site.register(CustomUser, UserModel)
-
 admin.site.register(AdminHOD)
 admin.site.register(Staffs)
 admin.site.register(Courses)

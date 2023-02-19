@@ -9,12 +9,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 't#ANMgu&%uc:9//6eRQB6{E^Y(r6]X;qJ<?(8!6!$uJB>(q9G/mYJJEz>>k&>/a\UHY6W'
+SECRET_KEY = 'afd54()&*(*&^*8!6!$uYJJEz>>k&UHY6W'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','127.0.0.1','localhost']
 
 
 # Application definition
@@ -26,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'student_management_app',
 ]
 
@@ -125,3 +125,4 @@ AUTH_USER_MODEL = "student_management_app.CustomUser"
 
 # Registering Custom Backend "EmailBackEnd"
 AUTHENTICATION_BACKENDS = ['student_management_app.EmailBackEnd.EmailBackEnd']
+
